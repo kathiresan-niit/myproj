@@ -145,9 +145,9 @@ width:2%;
     </div>
     
     <div class="col-sm-4" style="width:30%;height:30%; background-color:#449d44;">
-    <a href="<c:url value='moto'>
+    <a href="<c:url value='m'>
 <c:param name='mname' value='moto'/>
-<c:param name='mprice' value='18000'/>
+
 </c:url>">
  <img class="img-responsive" src="<c:url value='/resources/image/mt.png'/>" style="width:80%;">
 
@@ -157,16 +157,15 @@ width:2%;
     
     <div class="col-sm-2" style="width:30%;height:30%;  background-color:#31b0d5;">
     <a href="<c:url value='moto'><c:param name='mname' value='micro'/></c:url>">
- <img class="img-responsive" src="<c:url value='/resources/image/ad.png'/>" style="width:80%;">
+ <img class="img-circle img-responsive" src="<c:url value='/resources/image/ad.png'/>" width="304" height="236" >
 
 </a>
 
     </div>
-    <a href="all">view All</a>
-    <a href="m">m</a>
+    
   </div>
 </div>
-
+<a href="all">view All</a>
 
 </body>
 </html>
