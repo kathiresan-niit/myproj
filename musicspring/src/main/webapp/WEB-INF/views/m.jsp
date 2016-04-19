@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<meta charset="ISO-8859-1">
-<title>Spring MVC AngularJS demo</title>
-  <!-- CSS -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/sandstone/bootstrap.min.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<%@ include file="/WEB-INF/views/Header.jsp" %>
     <style>
         body { padding-top:50px; }
         .tablediv{

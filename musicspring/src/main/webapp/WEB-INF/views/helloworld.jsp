@@ -1,13 +1,11 @@
 <html>
 <head>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="<c:url value='/resources/bootstrap-3.3.6-dist/css/bootstrap.min.css'></c:url>"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="<c:url value='/resources/bootstrap-3.3.6-dist/js/bootstrap.min.js'></c:url>"></script>
-<style type="text/css">
 
+<style type="text/css">
+#myCarousel{
+margin-top:-3%;
+}
+}
 /*.body{
 background-color: ;
 }
@@ -36,7 +34,7 @@ width:2%;
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 50%;
-      height:60%;
+      height:50%;
       margin: auto;
   }
 </style>
@@ -44,24 +42,7 @@ width:2%;
 </head>
 
 <body>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="#"><img src="<c:url value='/resources/image/logo.png'/>" class="img-thumbnail img-responsive" alt="Cinque Terre" width="100" height="80"></a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">About us</a></li> 
-      <li><a href="#">Find Us @</a></li> 
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-     
-    </ul>
-  </div>
-</nav>
+<%@ include file="/WEB-INF/views/Header.jsp" %>
 <!-- slider  -->
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
@@ -82,7 +63,7 @@ width:2%;
         </div>
       </div>
     </div>
-    <div class="item"> <img src="<c:url value='/resources/image/slide1.jpg'/>" style="width:40%" data-src="" alt="Second slide">
+    <div class="item"> <img src="<c:url value='/resources/image/slide1.jpg'/>" style="width:50%" data-src="" alt="Second slide">
       <div class="container">
         <div class="carousel-caption" style="color:red; ">
           <h1>Samsung with Marshmallow</h1>
@@ -91,7 +72,7 @@ width:2%;
         </div>
       </div>
     </div>
-    <div class="item"> <img src="<c:url value='/resources/image/slide2.jpg'/>" style="width:40%" data-src="" alt="Third slide">
+    <div class="item"> <img src="<c:url value='/resources/image/slide2.jpg'/>" style="width:50%" data-src="" alt="Third slide">
       <div class="container">
         <div class="carousel-caption">
           <h1>Android N</h1>
@@ -112,8 +93,8 @@ width:2%;
     
   </div>
 </div>   
-<!-- slider end -->
-<div class="clr"></div>
+<!--<div class="clr"></div> slider end -->
+
 <div class="container vertical" >
 
 <form action="page2.jsp" role="form" >
@@ -157,7 +138,7 @@ width:2%;
     
     <div class="col-sm-2" style="width:30%;height:30%;  background-color:#31b0d5;">
     <a href="<c:url value='moto'><c:param name='mname' value='micro'/></c:url>">
- <img class="img-circle img-responsive" src="<c:url value='/resources/image/ad.png'/>" width="304" height="236" >
+ <img class=" img-responsive" src="<c:url value='/resources/image/ad.png'/>" width="304" height="236" >
 
 </a>
 
